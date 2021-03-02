@@ -1,0 +1,421 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2061968A-44ED-4349-9FC1-2E3CAD49D578}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>test1</RootNamespace>
+    <AssemblyName>test1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44313</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\bai.aspx" />
+    <Content Include="admin\baitap.aspx" />
+    <Content Include="admin\dangnhap.aspx" />
+    <Content Include="admin\Kanji.aspx" />
+    <Content Include="admin\nguphap.aspx" />
+    <Content Include="admin\thembai.aspx" />
+    <Content Include="admin\thembaitap.aspx" />
+    <Content Include="admin\themkanji.aspx" />
+    <Content Include="admin\themnguphap.aspx" />
+    <Content Include="admin\themtu.aspx" />
+    <Content Include="admin\tuvung.aspx" />
+    <Content Include="image\Cancel.jpg" />
+    <Content Include="image\Delete.jpg" />
+    <Content Include="image\Edit.png" />
+    <Content Include="image\Save.jpg" />
+    <Content Include="jquery-ui.css" />
+    <Content Include="jquery-ui.min.js" />
+    <Content Include="jquery.min.js" />
+    <Content Include="login.aspx" />
+    <Content Include="N5\Kanji.aspx" />
+    <Content Include="N5\kanji\kanji1.aspx" />
+    <Content Include="N5\kanji\kanji2.aspx" />
+    <Content Include="N5\kanji\tuvung.aspx" />
+    <Content Include="N5\nguphap.aspx" />
+    <Content Include="N5\tuvung.aspx" />
+    <Content Include="N5\Tuvung\tuvung1.aspx" />
+    <Content Include="N5\Tuvung\tuvung2.aspx" />
+    <Content Include="N5\Tuvung\tuvung3.aspx" />
+    <Content Include="N5\Tuvung\tuvung4.aspx" />
+    <Content Include="N5\Tuvung\tuvung5.aspx" />
+    <Content Include="nhat_viet.aspx" />
+    <Content Include="su hao\ads.html" />
+    <Content Include="su hao\authentication-corner.png" />
+    <Content Include="su hao\f%281%29.txt" />
+    <Content Include="su hao\f%282%29.txt" />
+    <Content Include="su hao\f%283%29.txt" />
+    <Content Include="su hao\f%284%29.txt" />
+    <Content Include="su hao\f.txt" />
+    <Content Include="su hao\owl.carousel.css" />
+    <Content Include="su hao\saved_resource.html" />
+    <Content Include="su hao\shield.png" />
+    <Content Include="su hao\theme.min.css" />
+    <Content Include="su hao\w3.css" />
+    <Content Include="su hao\zrt_lookup.html" />
+    <Content Include="image\128405432_3865621896782902_6171477215274771981_n.jpg" />
+    <Content Include="image\130040000_3865622073449551_386952046721105923_n.jpg" />
+    <Content Include="image\130726561_3865622313449527_565771397368867645_n.jpg" />
+    <Content Include="image\130843930_3865622120116213_4483656904096916043_n.jpg" />
+    <Content Include="tracuu.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="viet_nhat.aspx" />
+    <Content Include="baitap.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\bai.aspx.cs">
+      <DependentUpon>bai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\bai.aspx.designer.cs">
+      <DependentUpon>bai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\baitap.aspx.cs">
+      <DependentUpon>baitap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\baitap.aspx.designer.cs">
+      <DependentUpon>baitap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\dangnhap.aspx.cs">
+      <DependentUpon>dangnhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\dangnhap.aspx.designer.cs">
+      <DependentUpon>dangnhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Kanji.aspx.cs">
+      <DependentUpon>Kanji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Kanji.aspx.designer.cs">
+      <DependentUpon>Kanji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\nguphap.aspx.cs">
+      <DependentUpon>nguphap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\nguphap.aspx.designer.cs">
+      <DependentUpon>nguphap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\thembai.aspx.cs">
+      <DependentUpon>thembai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\thembai.aspx.designer.cs">
+      <DependentUpon>thembai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\thembaitap.aspx.cs">
+      <DependentUpon>thembaitap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\thembaitap.aspx.designer.cs">
+      <DependentUpon>thembaitap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\themkanji.aspx.cs">
+      <DependentUpon>themkanji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\themkanji.aspx.designer.cs">
+      <DependentUpon>themkanji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\themnguphap.aspx.cs">
+      <DependentUpon>themnguphap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\themnguphap.aspx.designer.cs">
+      <DependentUpon>themnguphap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\themtu.aspx.cs">
+      <DependentUpon>themtu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\themtu.aspx.designer.cs">
+      <DependentUpon>themtu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\tuvung.aspx.cs">
+      <DependentUpon>tuvung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\tuvung.aspx.designer.cs">
+      <DependentUpon>tuvung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChildActionOnlyAttribute.cs" />
+    <Compile Include="data.cs" />
+    <Compile Include="function.cs" />
+    <Compile Include="JsonResult.cs" />
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="N5\Kanji.aspx.cs">
+      <DependentUpon>Kanji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\Kanji.aspx.designer.cs">
+      <DependentUpon>Kanji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="N5\kanji\kanji1.aspx.cs">
+      <DependentUpon>kanji1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\kanji\kanji1.aspx.designer.cs">
+      <DependentUpon>kanji1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="N5\kanji\kanji2.aspx.cs">
+      <DependentUpon>kanji2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\kanji\kanji2.aspx.designer.cs">
+      <DependentUpon>kanji2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="N5\kanji\tuvung.aspx.cs">
+      <DependentUpon>tuvung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\kanji\tuvung.aspx.designer.cs">
+      <DependentUpon>tuvung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="N5\N5.Master.cs">
+      <DependentUpon>N5.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\N5.Master.designer.cs">
+      <DependentUpon>N5.Master</DependentUpon>
+    </Compile>
+    <Compile Include="N5\nguphap.aspx.cs">
+      <DependentUpon>nguphap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\nguphap.aspx.designer.cs">
+      <DependentUpon>nguphap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="N5\tuvung.aspx.cs">
+      <DependentUpon>tuvung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\tuvung.aspx.designer.cs">
+      <DependentUpon>tuvung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="N5\Tuvung\tuvung1.aspx.cs">
+      <DependentUpon>tuvung1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\Tuvung\tuvung1.aspx.designer.cs">
+      <DependentUpon>tuvung1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="N5\Tuvung\tuvung2.aspx.cs">
+      <DependentUpon>tuvung2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\Tuvung\tuvung2.aspx.designer.cs">
+      <DependentUpon>tuvung2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="N5\Tuvung\tuvung3.aspx.cs">
+      <DependentUpon>tuvung3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\Tuvung\tuvung3.aspx.designer.cs">
+      <DependentUpon>tuvung3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="N5\Tuvung\tuvung4.aspx.cs">
+      <DependentUpon>tuvung4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\Tuvung\tuvung4.aspx.designer.cs">
+      <DependentUpon>tuvung4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="N5\Tuvung\tuvung5.aspx.cs">
+      <DependentUpon>tuvung5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N5\Tuvung\tuvung5.aspx.designer.cs">
+      <DependentUpon>tuvung5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nhat_viet.aspx.cs">
+      <DependentUpon>nhat_viet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nhat_viet.aspx.designer.cs">
+      <DependentUpon>nhat_viet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartialViewResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="tracuu.aspx.cs">
+      <DependentUpon>tracuu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tracuu.aspx.designer.cs">
+      <DependentUpon>tracuu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viet_nhat.aspx.cs">
+      <DependentUpon>viet_nhat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viet_nhat.aspx.designer.cs">
+      <DependentUpon>viet_nhat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="baitap.aspx.cs">
+      <DependentUpon>baitap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="baitap.aspx.designer.cs">
+      <DependentUpon>baitap.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="su hao\all.min.js.download" />
+    <Content Include="su hao\bootstrap.min.js.download" />
+    <Content Include="su hao\config.navbar-vertical.min.js.download" />
+    <Content Include="su hao\is.min.js.download" />
+    <Content Include="su hao\jquery.min.js.download" />
+    <Content Include="su hao\js" />
+    <Content Include="su hao\osd.js.download" />
+    <Content Include="su hao\owl.carousel.js.download" />
+    <Content Include="su hao\popper.min.js.download" />
+    <Content Include="su hao\theme.min.js.download" />
+    <Content Include="admin\admin.Master" />
+    <Content Include="N5\N5.Master" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="N2\kanji\" />
+    <Folder Include="N2\nguphap\" />
+    <Folder Include="N2\Tuvung\" />
+    <Folder Include="N3\kanji\" />
+    <Folder Include="N3\nguphap\" />
+    <Folder Include="N3\Tuvung\" />
+    <Folder Include="N4\kanji\" />
+    <Folder Include="N4\nguphap\" />
+    <Folder Include="N4\Tuvung\" />
+    <Folder Include="test\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64746</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44313/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
